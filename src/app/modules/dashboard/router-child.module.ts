@@ -1,11 +1,13 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './compotents/home/home.component';
+import { CategoryComponent } from '../category/components/category/category.component';
 
 
 const childRoutes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'home', component: HomeComponent }
+  { path: 'home', component: HomeComponent },
+  { path: 'category', component: CategoryComponent},
 ]
 
 @NgModule({
