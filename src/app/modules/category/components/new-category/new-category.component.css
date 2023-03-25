@@ -1,0 +1,12 @@
+.caregory-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.caregory-container > * {
+  width: 100%;
+}
+
+button{
+  margin: auto;
+}

@@ -16,7 +16,15 @@ export class CategoryService {
    * @returns
    */
   getCategories(){
-    const endpoint = `${base_url}/categories`;
+    const endpoint = `${base_url}/categories`
     return this.http.get(endpoint) //esto devuelve un observables
+  }
+
+  /**
+   * save the categories
+   */
+  saveCategorie(body: any){
+    const endpoint = `${base_url}/categories`
+    return this.http.post(endpoint, body)
   }
 }
