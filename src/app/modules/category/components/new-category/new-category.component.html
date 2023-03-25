@@ -1,4 +1,4 @@
-<h2 mat-dialog-title>Agregar nueva categoria</h2>
+<h2 mat-dialog-title>{{ estadoFormulario }} nueva categoria</h2>
 <mat-dialog-content>
   <form [formGroup]="categoryForm">
     <div class="caregory-container">
@@ -15,7 +15,7 @@
 
 <mat-dialog-actions>
   <button mat-raised-button color="primary" (click)="onSave()" [disabled]="categoryForm.invalid">
-    <mat-icon>save</mat-icon> Guardar
+    <mat-icon>save</mat-icon> {{ estadoFormulario1 }}
   </button>
 
   <button mat-raised-button color="warn" (click)="onCancel()">
